@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex005/favicon.ico.ico" type="image/x-icon">
+    <title>Imagem dinâmica</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas(pictures)</h1>
+    <h3>Yvano</h3>
+    <p>Veja que a imagem adapta ao tamanho de navegador</p>
+    <picture>
+        <source media="(max-width: 620px )" srcset="img/bicicleta.png" type="image/png">
+        <source media="(max-width: 955px )" srcset="img/carro.png" type="image/png">
+        <img src="img/caminhao.png" alt="imagem flexivel">
+    </picture>
+   
+    <h1>Áudio</h1>
+    <audio controls autoplay>
+        <source src="media/drake-one-dance-feat-wizkid-and-kyla.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
