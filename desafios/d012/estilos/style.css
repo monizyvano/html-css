@@ -16,12 +16,13 @@
 }
 
 :root{
-    --fonte-titulo: 'Passion One',sans-serif;
+    --fonte-titulo: 'Passion One', 'cursive';
     --fonte-padrao:Verdana,Geneva,Tahona,sans-serif;
     --fonte-poema:Sriracha, cursive;
 }
-body{
-    height: 97vh;
+html,body{
+    min-height: 100vh;
+    background-color: darkgray;
 }
 header{
     background-color: black;
@@ -29,26 +30,46 @@ header{
     max-height: 350px;
     min-height: 150px;
     padding-top: 40px;
+    text-align: center;
 }
 header>h1{
     font-style: normal;
-    font-size: 10vh;
+    font-size: 10vw;
     font-family: var(--fonte-titulo);
     text-align: center;
+    font-variant: small-caps;
+    padding-top: 50px;
 }
 header>p{
     font-family: var(--fonte-padrao);
-    text-align: center;
-    font-size: 1.3em;
+    font-size: 1em;
+    padding-bottom: 50px;
+}
+section{
+    font-family: var(--fonte-poema);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 3.5vw;
+}
+section.imagem{
+    background: darkgray;
+    color: white;
+    box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.548);
+    background-size: cover;
+}
+section.imagem>p{
+    background-color: rgba(0, 0, 0, 0.473);
+    display: inline-block;
+    text-shadow: 1px 1px 0px black;
+    padding: 10px;
 }
 
-.folha{
-    padding: 15px;
-    margin: 15px;
+
+.folha{ 
     background-color: white;
     color: black;
-    font-family: var(--fonte-poema);
-    min-height: 300px;
 }
 #girassol{
     color: white;
@@ -57,18 +78,6 @@ header>p{
     background-position: center right;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
-    max-height: 600px;
-    min-height: 320px;
-    padding: 40px;
-}
-#girassol>p{
-    font-family: var(--fonte-poema);
-    background-color: rgba(0, 0, 0, 0.356);
-    background-position: center left;
-   width: 210px;
-   padding: 10px;
-   text-align: justify;
 }
 #estrofes{
     color: white;
@@ -77,31 +86,31 @@ header>p{
     background-position: center right;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
-    max-height: 500px;
-    min-height: 320px;
-    padding: 40px;
 }
-#estrofes>p{
-    font-family: var(--fonte-poema);
-    background-color: rgba(0, 0, 0, 0.356);
-    background-position: center left;
-    width: 210px;
-    padding: 10px;
-    text-align: justify;
-}
+
 footer{
     background-color: black;
     color: white;
+}
+footer>p{
     font-family: var(--fonte-padrao);
     text-align: center;
     padding: 10px;
+    font-size: 1em;
+}
+a>p{
+    font-size: 1em;
 }
 a{
     text-decoration: none;
     color: white;
     font-weight: 700;
+    
 }
 a:hover{
     text-decoration: underline;
+}
+p{
+    padding-top: 10px;
+    padding-bottom: 25px;
 }
