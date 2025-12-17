@@ -4,32 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+        .num{
+            text-align: right;
+        }
+        caption{
+
+            background-color: lightgray;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 1.5em;
+            color: rgb(75, 75, 75);
+        }
+        tbody tr:nth-child(even){
+            background-color: #dddddd;
+        }
+        tbody tr:nth-child(odd){
+            background-color: white;
+        }
+    </style>
 </head>
 <body>
+    <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
         <thead>
-            <caption>
             <tr>
-                <td>População das Unidades Federaativas</td>
-            </tr>
-            </caption>
-            <tr>
-                <td>Cidade</td>
-                <td>População</td>
+                <th scope="col">Cidade</th>
+                <th scope="col" style="width: 55px;">População</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>45.919.049</td>
+                <td class="num">45.919.049</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td>21.168.761</td>
+                <td class="num">21.168.761</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td> 
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7.075.181</td> 
             </tr>
         </tbody>
         <tfoot>
-
+            <tr>
+                <th scope="row">Total</th>
+                <td class="num"><strong>67.087.810</strong></td>
+            </tr>
         </tfoot>
     </table>
 </body>
