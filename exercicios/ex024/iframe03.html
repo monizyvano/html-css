@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerando conteúdo dentro do iframe</title>
+    <style>
+        iframe {
+            width: 500px;
+            height: 500px;
+            border: 5px solid #000000;
+            border-radius: 15px;
+            box-shadow: 3px 3px 10px #706f6fda;
+        }
+    </style>
+</head>
+<body>
+    <iframe srcdoc="<h2>Teste de título</h2><p>Esse documento foi gerado dinamicamente dentro do iframe.</p>" frameborder="0">
+        <p>Seu navegador não suporta iframes.</p>
+    </iframe>
+    
+</body>
+</html>
