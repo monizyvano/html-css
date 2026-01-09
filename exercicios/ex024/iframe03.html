@@ -5,19 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerando conteúdo dentro do iframe</title>
     <style>
-        iframe {
-            width: 500px;
-            height: 500px;
-            border: 5px solid #000000;
-            border-radius: 15px;
-            box-shadow: 3px 3px 10px #706f6fda;
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+        iframe#tela {
+             width: 93vw;
+             height: 400px;
+             border: 1px solid #ccc;
         }
     </style>
 </head>
 <body>
-    <iframe srcdoc="<h2>Teste de título</h2><p>Esse documento foi gerado dinamicamente dentro do iframe.</p>" frameborder="0">
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque architecto suscipit accusamus vero rem ab, quis excepturi illum nulla, aliquid aspernatur. Consectetur est autem dolor consequatur maxime esse adipisci accusamus!
+        lorenm ipsum dolor sit amet consectetur adipisicing elit. Doloremque architecto suscipit accusamus vero rem ab, quis excepturi illum nulla, aliquid aspernatur. Consectetur est autem dolor consequatur maxime esse adipisci accusamus!
+    </p>
+    <ul>
+        <li><a href="pagina01.html" target="tela">primera pagina</a></li>
+        <li><a href="pagina02.html" target="tela">segunda pagina</a></li>
+        <li><a href="#">terceira pagina</a></li>
+    </ul>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, voluptatibus unde accusamus, animi hic fugit illum iste voluptates amet quibusdam minima dolores tempora explicabo voluptatum, facere harum pariatur nobis? Incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione assumenda praesentium sunt, hic nam enim quia veritatis nihil quasi velit veniam dolore corporis unde culpa perferendis repellendus eligendi similique voluptatem!
+    </p>
         <p>Seu navegador não suporta iframes.</p>
     </iframe>
-    
+     <iframe srcdoc="<h2>Teste de título</h2><p>Esse documento foi gerado dinamicamente dentro do iframe.</p> <p>" id="tela" name="tela">
+        <p>Seu navegador não suporta iframes.</p>
+    </iframe>
+    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint qui laboriosam natus magnam nam vitae quae nihil quam, quod consequatur tenetur molestias repellendus voluptates quia necessitatibus quaerat modi deserunt libero!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam ipsa numquam, earum culpa ad voluptates incidunt quidem ipsum, est enim, cupiditate tempora minus omnis obcaecati laborum iste explicabo dicta neque?
+    </p>
 </body>
 </html>
