@@ -7,7 +7,23 @@
 </head>
 <body>
     <h1>Exemplo de formulário</h1>
-    <form action="">
+    <form action="" method="post" autocomplete="on">
+        <p>
+            <label for="icor">Nome</label>
+            <input type="color" name="color" id="icor" value="#ffffff">
+        </p>
+        <p>
+            <label for="irange">Nível de satisfação</label>
+            <input type="range" name="range" id="irange" min="0" max="10" value="6.5" step="0.5">
+        </p>
+        <p>
+            <label for="ifoto">Foto:</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
         
     </form>
     
