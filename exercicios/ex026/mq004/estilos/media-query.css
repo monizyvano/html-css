@@ -1,0 +1,59 @@
+@charset "UTTF-8";
+/*estilos para todas medias queries*/
+
+@media print {
+    body{
+        background: black url(../imagens/icon-print.png) no-repeat center center fixed;
+        background-size: contain;
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: none;
+        color: black;
+    }
+    main{
+        border: 2px solid black;
+    }
+    main h1{
+        color: black;
+        text-shadow: none;
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: block;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        background: black url(../imagens/back-tablet.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+    img#phone{display: none;}
+    img#tablet{display: block;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body{
+        background: black url(../imagens/back-pc.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: block;}
+    img#tv{display: none;}
+}
+@media screen and (min-width: 1200px) {
+    body{
+        background: black url(../imagens/back-tv.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: block;}
+    
+}
