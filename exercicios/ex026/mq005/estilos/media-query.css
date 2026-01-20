@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+
+@media (min-width: 768px){
+    span#imenu{
+        display: none;
+    }
+    menu{
+        display: block !important;
+    }
+    main{
+        width: 60vw;
+    }
+    menu>ul>li{
+        display: inline-block;
+        width: calc(55% / 5);
+
+    }
+}
